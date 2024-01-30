@@ -15,7 +15,12 @@ namespace Assignment2
 				ConsoleFormatter.PrintMenuItem("Night Shift Schedule", "2");
 				ConsoleFormatter.PrintMenuItem("Exit", "0");
 				Console.Write("Choose an option: ");
-				int choice = Convert.ToInt32(Console.ReadLine());
+
+				if (!int.TryParse(Console.ReadLine(), out int choice))
+				{
+					Console.WriteLine("Invalid input. Please enter a valid number.");
+					continue;
+				}
 
 				if (choice == 0) break;
 
@@ -39,9 +44,26 @@ namespace Assignment2
 				}
 
 				List<int> schedule = CalculateSchedule(startWeek, interval);
-				foreach (int week in schedule)
+				PrintScheduleInColumns(schedule, 7);
+
+
+				Console.WriteLine("\nPress any key to return to the main menu...");
+				Console.ReadKey();
+			}
+		}
+
+		private void PrintScheduleInColumns(List<int> schedule, int maxRows)
+		{
+			int columnCount = 0;
+			foreach (int week in schedule)
+			{
+				Console.Write($"Week {week}\t\t");
+				columnCount++;
+
+				if (columnCount >= maxRows)
 				{
-					Console.WriteLine($"Week {week}");
+					Console.WriteLine();
+					columnCount = 0;
 				}
 			}
 		}

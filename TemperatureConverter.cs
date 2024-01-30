@@ -18,30 +18,32 @@ namespace Assignment2
 
 				if (!int.TryParse(Console.ReadLine(), out int choice))
 				{
-					Console.WriteLine("Please enter a valid number.");
-					Console.ReadKey();
-					continue;
+					Console.WriteLine("Invalid input. Please enter a number.");
 				}
-
-				switch (choice)
+				else
 				{
-					case 1:
-						ConvertFahrenheitToCelsius();
-						break;
-					case 2:
-						ConvertCelsiusToFahrenheit();
-						break;
-					case 0:
-						return; // Exit the method to return to the main menu
-					default:
-						Console.WriteLine("Invalid choice.");
-						break;
-				}
 
-				if (choice != 0)
-				{
-					Console.WriteLine("\nPress any key to return to the Temperature Converter menu...");
-					Console.ReadKey();
+					switch (choice)
+					{
+						case 1:
+							ConvertFahrenheitToCelsius();
+							break;
+						case 2:
+							ConvertCelsiusToFahrenheit();
+							break;
+						case 0:
+							Console.WriteLine("Returning to Main Menu...");
+							return;
+						default:
+							Console.WriteLine("Invalid choice.");
+							break;
+					}
+
+					if (choice != 0)
+					{
+						Console.WriteLine("\nPress any key to return to the Temperature Converter menu...");
+						Console.ReadKey();
+					}
 				}
 			}
 		}
