@@ -1,0 +1,14 @@
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.AssemblyInfoInputs.cache
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.AssemblyInfo.cs
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.csproj.CoreCompileInputs.cache
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/bin/Debug/net7.0/Asgn2
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/bin/Debug/net7.0/Asgn2.deps.json
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/bin/Debug/net7.0/Asgn2.runtimeconfig.json
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/bin/Debug/net7.0/Asgn2.dll
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/bin/Debug/net7.0/Asgn2.pdb
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.dll
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/refint/Asgn2.dll
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.pdb
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/Asgn2.genruntimeconfig.cache
+/Users/hampusandersson/Desktop/Desktop - Hampus’s MacBook Pro/dotnetProjects/mau/Asgn2/obj/Debug/net7.0/ref/Asgn2.dll
