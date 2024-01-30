@@ -1,3 +1,5 @@
+![image](https://github.com/Hampster8/Asgn2/assets/70724079/7dc7135e-a8b8-467c-b0f9-20864db66218)
+
 # Assignment2 - Console Application Suite
 
 ## Overview
