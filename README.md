@@ -1,3 +1,5 @@
+![image](https://github.com/Hampster8/Asgn2/assets/70724079/7dc7135e-a8b8-467c-b0f9-20864db66218)
+
 # Assignment2 - Console Application Suite
 
 ## Overview
@@ -22,19 +24,19 @@ To run this application, you need to have .NET installed on your machine.
    ```
    dotnet run
    ```
-   ## Usage
+## Usage
 
-   After starting the application, you will be presented with a main menu where you can choose from the available options:
+After starting the application, you will be presented with a main menu where you can choose from the available options:
 
 
-   1. **Temperature Converter**: Convert temperatures between Fahrenheit and Celsius.
-   2. **String Functions**: Explore various string functions.
-   3. **Math Works**: Perform a range of mathematical operations.
-   4. **Scheduler**: View and manage different schedules.
-   5. **Exit**: Exit the application.
+1. **Temperature Converter**: Convert temperatures between Fahrenheit and Celsius.
+2. **String Functions**: Explore various string functions.
+3. **Math Works**: Perform a range of mathematical operations.
+4. **Scheduler**: View and manage different schedules.
+5. **Exit**: Exit the application.
 
-   Each option leads to a submenu where you can perform specific tasks related to the chosen utility.
+Each option leads to a submenu where you can perform specific tasks related to the chosen utility.
 
-   ## Contact
+## Contact
 
-   For any queries or suggestions, please feel free to reach out through my GitHub profile: [Hampster8](https://github.com/Hampster8)
+For any queries or suggestions, please feel free to reach out through my GitHub profile: [Hampster8](https://github.com/Hampster8)
