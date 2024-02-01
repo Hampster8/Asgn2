@@ -13,9 +13,7 @@ namespace Assignment2
 
 				if (!int.TryParse(Console.ReadLine(), out int choice))
 				{
-					Console.WriteLine("Please enter a valid number.");
-					Console.WriteLine("Press any key to continue...");
-					Console.ReadKey();
+					HandleInvalidInput();
 					continue;
 				}
 
@@ -25,11 +23,18 @@ namespace Assignment2
 					break;
 				}
 
-				ProcessMenuChoice(choice);
+				HandleMenuSelection(choice);
 
 				Console.WriteLine("\nOperation completed. Press any key to return to the main menu...");
 				Console.ReadKey();
 			}
+		}
+
+		private void HandleInvalidInput()
+		{
+			Console.WriteLine("Please enter a valid number.");
+			Console.WriteLine("Press any key to continue...");
+			Console.ReadKey();
 		}
 
 		private void DisplayMainMenu()
@@ -43,7 +48,7 @@ namespace Assignment2
 			Console.Write("\nEnter your choice: ");
 		}
 
-		private void ProcessMenuChoice(int choice)
+		private void HandleMenuSelection(int choice)
 		{
 			switch (choice)
 			{

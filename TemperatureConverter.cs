@@ -50,19 +50,21 @@ namespace Assignment2
 
 		public void ConvertFahrenheitToCelsius()
 		{
-			for (int f = 0; f <= 212; f += 10)
+			for (int fahrenheit = 0; fahrenheit <= 212; fahrenheit += 10)
 			{
-				double c = 5.0 / 9.0 * (f - 32);
-				Console.WriteLine($"{f} F = {c:F2} C");
+				// Formula to convert Fahrenheit to Celsius: C = (F - 32) * 5/9
+				double celsius = 5.0 / 9.0 * (fahrenheit - 32);
+				Console.WriteLine($"{fahrenheit} F = {celsius:F2} C");
 			}
 		}
 
 		public void ConvertCelsiusToFahrenheit()
 		{
-			for (int c = 0; c <= 100; c += 5)
+			for (int celsius = 0; celsius <= 100; celsius += 5)
 			{
-				double f = 9.0 / 5.0 * c + 32;
-				Console.WriteLine($"{c} C = {f:F2} F");
+				// Formula to convert Celsius to Fahrenheit: F = C * 9/5 + 32
+				double fahrenheit = 9.0 / 5.0 * celsius + 32;
+				Console.WriteLine($"{celsius} C = {fahrenheit:F2} F");
 			}
 		}
 	}

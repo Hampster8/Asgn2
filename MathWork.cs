@@ -26,12 +26,6 @@ namespace Assignment2
 					Console.Write("Enter the ending number: ");
 				}
 
-				if (start > end)
-				{
-					Console.WriteLine("The starting number must be less than or equal to the ending number.");
-					continue;
-				}
-
 				Console.WriteLine($"The sum of numbers between {start} and {end} is: {SumOfNumbers(start, end)}");
 				Console.WriteLine(PrintEvenNumbers(start, end));
 				Console.WriteLine(PrintOddNumbers(start, end));
@@ -48,9 +42,11 @@ namespace Assignment2
 		public int SumOfNumbers(int start, int end)
 		{
 			int sum = 0;
-			for (int i = start; i <= end; i++)
+			int lower = Math.Min(start, end);
+			int upper = Math.Max(start, end);
+			for (int number = lower; number <= upper; number++)
 			{
-				sum += i;
+				sum += number;
 			}
 			return sum;
 		}
@@ -58,12 +54,14 @@ namespace Assignment2
 		public string PrintEvenNumbers(int start, int end)
 		{
 			StringBuilder evenNumbers = new StringBuilder();
-			evenNumbers.Append($"Even numbers between {start} and {end}: ");
-			for (int i = start; i <= end; i++)
+			int lower = Math.Min(start, end);
+			int upper = Math.Max(start, end);
+			evenNumbers.Append($"Even numbers between {lower} and {upper}: ");
+			for (int number = lower; number <= upper; number++)
 			{
-				if (i % 2 == 0)
+				if (number % 2 == 0)
 				{
-					evenNumbers.Append(i + " ");
+					evenNumbers.Append(number + " ");
 				}
 			}
 			return evenNumbers.ToString();
@@ -72,8 +70,10 @@ namespace Assignment2
 		public string PrintOddNumbers(int start, int end)
 		{
 			StringBuilder oddNumbers = new StringBuilder();
-			oddNumbers.Append($"Odd numbers between {start} and {end}: ");
-			for (int i = start; i <= end; i++)
+			int lower = Math.Min(start, end);
+			int upper = Math.Max(start, end);
+			oddNumbers.Append($"Odd numbers between {lower} and {upper}: ");
+			for (int i = lower; i <= upper; i++)
 			{
 				if (i % 2 != 0)
 				{
@@ -86,10 +86,12 @@ namespace Assignment2
 		public string CalculateSquareRoots(int start, int end)
 		{
 			StringBuilder squareRoots = new StringBuilder();
-			squareRoots.Append($"Square roots between {start} and {end}: \n");
-			for (int i = start; i <= end; i++)
+			int lower = Math.Min(start, end);
+			int upper = Math.Max(start, end);
+			squareRoots.Append($"Square roots between {lower} and {upper}: \n");
+			for (int number = lower; number <= upper; number++)
 			{
-				squareRoots.AppendLine($"Square root of {i} = {Math.Sqrt(i):F2}");
+				squareRoots.AppendLine($"Square root of {number} = {Math.Sqrt(number):F2}");
 			}
 			return squareRoots.ToString();
 		}
@@ -97,11 +99,11 @@ namespace Assignment2
 		public void PrintMultiplicationTable()
 		{
 			Console.WriteLine("Multiplication Table (1 to 10):");
-			for (int i = 1; i <= 10; i++)
+			for (int multiplier = 1; multiplier <= 10; multiplier++)
 			{
-				for (int j = 1; j <= 10; j++)
+				for (int multiplicand = 1; multiplicand <= 10; multiplicand++)
 				{
-					Console.Write($"{i * j}\t");
+					Console.Write($"{multiplier * multiplicand}\t");
 				}
 				Console.WriteLine();
 			}
